@@ -6,7 +6,7 @@ This is for additional practice for:
 
 Install dependecies: `npm install`
 
-In `server.js` you will notice that you already have the server set up for you. yIt is your job to build endpoints to handle specific requests. Take a look at the `users.json` file to see the data that you will be interacting with.
+In `index.js` you will notice that you already have the server set up for you. It is your job to build endpoints to handle specific requests. Take a look at the `users.json` file to see the data that you will be interacting with.
 
 ### Endpoints
 
@@ -113,7 +113,7 @@ Use Postman to make requests to your server.
    * POST
    * '/api/newUser
    * `?id=110`
-   * Body of request: 
+   * Body of request:
    ```
    {
         "first_name": "Mac",
