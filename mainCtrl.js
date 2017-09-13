@@ -15,9 +15,9 @@ module.exports = {
     var audiUsers = users.filter(function(user){
       return user.make === req.query.make;
     });
-    res.send(audiUsers);
-  }
-},
+    res.status(200).send(audiUsers);
+   }
+  },
 
   getVehicleYear: function(req, res){
     var greaterCarYear = [];
@@ -36,9 +36,27 @@ module.exports = {
     }
   }
   res.sendStatus(200);
-},
+ },
 
   updateCarMake: function(req, res){
-    
+    for (var i = 0; i < users.length; i++) {
+      if(req.query.userId == users[i].id && req.query.make != users[i].make){
+        users[i].make = req.query.make;
+        console.log(users[i]);
+      }
+    }
+    res.sendStatus(200);
+  },
+
+  deleteUser: function(req, res){
+    for (var i = 0; i < users.length; i++) {
+      if(req.query.model == users[i].model){
+        console.log(users[i])
+         users.splice(i, 1);
+         i--;
+      }
+    }
+    res.sendStatus(200);
   }
+
 };

@@ -16,7 +16,9 @@ app.get('/api/users/vehicleYear', mainCtrl.getVehicleYear);
 
 app.put('/api/users/emailUpdate', mainCtrl.updateEmail);
 
-app.put('api/users/updateVehicle', mainCtrl.updateCarMake);
+app.put('/api/users/updateVehicle', mainCtrl.updateCarMake);
+
+app.delete('/api/removeUser', mainCtrl.deleteUser)
 
 
 
