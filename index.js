@@ -10,12 +10,14 @@ app.use(bodyParser.json());
 
 
 // === ENDPOINTS/Routes? =========================
- app.get("/api/users", mainCtrl.getAudiUsers);
+app.get("/api/users", mainCtrl.getAudiUsers);
 
-app.get('/', function(req, res, next){
-  next();
-  res.send();
-});
+app.get('/api/users/vehicleYear', mainCtrl.getVehicleYear);
+
+app.put('/api/users/emailUpdate', mainCtrl.updateEmail);
+
+app.put('api/users/updateVehicle', mainCtrl.updateCarMake);
+
 
 
 
