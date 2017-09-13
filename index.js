@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 
 // === ENDPOINTS/Routes? =========================
- app.get("/users/make", mainCtrl.getAudiUsers);
+ app.get("/api/users", mainCtrl.getAudiUsers);
 
 app.get('/', function(req, res, next){
   next();

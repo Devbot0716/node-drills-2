@@ -6,6 +6,6 @@ var users = require('./users.json');
 
 module.exports = {
   getAudiUsers: function (req, res) {
-    return res.send({"users": users[i].make})
+    return res.send("/users/api/:?make=Audi", req.params.make)
   }
 }

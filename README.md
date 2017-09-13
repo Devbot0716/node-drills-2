@@ -31,7 +31,7 @@ Use Postman to make requests to your server.
 
 4. Update users email address to `null` with given last name.
    * PUT
-   * `/api/user/emailUpdate
+   * '/api/user/emailUpdate'
    * `?lastName=Garstan`   
 
 5. Update car make with given user id and car make.
